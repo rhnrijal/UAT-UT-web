@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  code: "at70.01"
+  title: "DMM"
+
+two:
+  id: 2
+  code: "at71.01"
+  title: "DSA"
