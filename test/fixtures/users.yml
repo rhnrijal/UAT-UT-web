@@ -7,9 +7,9 @@
 one:
   id: 1
   email: "try@ait.asia"
-  encrypted_password: "$2a$11$.dT6.et1SC8vGZ7EROBekeIwMK8/yPdHciSAo/ES77fmwITLzU/Cy"
+  encrypted_password: "$2a$11$VwhYWUA14O1v5QS16qStsuPbhQWO1fHZuRmthIbEMnNysBWzl5kyi"
 
 two:
   id: 2
   email: "try1@ait.asia"
-  encrypted_password: "$2a$11$Ydpnm3hNqFSegmMSI3IPP.jRYYLkUa8yKtiFTiMZMfBYlYegSQ2TK"
+  encrypted_password: "$2a$11$XVZDvY3j3g903ERoEy91i.RaxxHrLLaRlhDjTJvmshbitb.ykEJHC"

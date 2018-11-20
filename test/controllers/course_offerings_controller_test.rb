@@ -16,14 +16,20 @@ class CourseOfferingsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create course_offering" do
-    assert_difference('CourseOffering.count') do
-      post course_offerings_url, params: { course_offering: { course_id: @course_offering.course_id, year: @course_offering.year } }
+    assert_difference('CourseOffering.count',1) do
+      post course_offerings_url, params: { course_offering: { course_id: 1, year: 2018 } }
     end
 
     assert_redirected_to course_offering_url(CourseOffering.last)
   end
 
+  test "should not create course_offering" do
+    assert_no_difference('CourseOffering.count',1) do
+      post course_offerings_url, params: { course_offering: { course_id: 1, year: '' } }
+    end
 
+    assert_redirected_to course_offering_url(CourseOffering.last)
+  end
 
   test "should show course_offering" do
     get course_offering_url(@course_offering)
@@ -36,7 +42,12 @@ class CourseOfferingsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update course_offering" do
-    patch course_offering_url(@course_offering), params: { course_offering: { course_id: @course_offering.course_id, year: @course_offering.year } }
+    patch course_offering_url(@course_offering), params: { course_offering: { course_id: 1, year: 2018 } }
+    assert_redirected_to course_offering_url(@course_offering)
+  end
+
+  test "should not update course_offering" do
+    patch course_offering_url(@course_offering), params: { course_offering: { course_id: 1, year: '' } }
     assert_redirected_to course_offering_url(@course_offering)
   end
 

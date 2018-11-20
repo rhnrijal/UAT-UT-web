@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   before_validation :assign_role
   belongs_to :role
+  #validates_presence_of :role
   #belongs_to :course
 
   def assign_role

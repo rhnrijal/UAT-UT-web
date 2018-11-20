@@ -17,10 +17,18 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create course" do
     assert_difference('Course.count') do
-      post courses_url, params: { course: { code: @course.code, title: @course.title } }
+      post courses_url, params: { course: { code: 1, title: @course.title } }
     end
 
     assert_redirected_to course_url(Course.last)
+  end
+
+  test "should not create course when code is not presence" do
+    assert_no_difference('Course.count') do
+      post courses_url, params: { course: { code: '', title: @course.title } }
+    end
+
+   # assert_redirected_to course_url(Course.last)
   end
 
   test "should show course" do
@@ -35,6 +43,11 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
 
   test "should update course" do
     patch course_url(@course), params: { course: { code: 1, title: 'DMM' } }
+    assert_redirected_to course_url(@course)
+  end
+
+  test "should not update course when code is not presence" do
+    patch course_url(@course), params: { course: { code: '', title: 'DMM' } }
     assert_redirected_to course_url(@course)
   end
 
