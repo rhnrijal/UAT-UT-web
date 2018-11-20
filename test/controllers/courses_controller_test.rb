@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class CoursesControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
   setup do
     @course = courses(:one)
   end
@@ -23,13 +24,7 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to course_url(Course.last)
   end
 
-  test "should not create course when code is not presence" do
-    assert_no_difference('Course.count') do
-      post courses_url, params: { course: { code: '', title: @course.title } }
-    end
 
-   # assert_redirected_to course_url(Course.last)
-  end
 
   test "should show course" do
     get course_url(@course)
@@ -46,10 +41,7 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to course_url(@course)
   end
 
-  test "should not update course when code is not presence" do
-    patch course_url(@course), params: { course: { code: '', title: 'DMM' } }
-    assert_redirected_to course_url(@course)
-  end
+
 
   test "should destroy course" do
     assert_difference('Course.count', -1) do
