@@ -14,18 +14,18 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-20T18:49:10+07:00">2018-11-20T18:49:10+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-20T19:29:46+07:00">2018-11-20T19:29:46+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">90.72%</span></span>
+    (<span class="covered_percent"><span class="green">90.3%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.09
+         1.06
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>34</b> files in total.
     <b>237</b> relevant lines. 
-    <span class="green"><b>215</b> lines covered</span> and
-    <span class="red"><b>22</b> lines missed </span>
+    <span class="green"><b>214</b> lines covered</span> and
+    <span class="red"><b>23</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -87,7 +87,7 @@
         <td>33</td>
         <td>29</td>
         <td>4</td>
-        <td>1.5</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -154,8 +154,8 @@
         <td class="strong"><a href="#d01448198f163a14fe128e536dc132246809475d" class="src_link" title="app/models/course_offering.rb">app/models/course_offering.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
-        <td>3</td>
-        <td>3</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -164,8 +164,8 @@
         <td class="strong"><a href="#512858844965365342d8f98e4aaddc0d761c671b" class="src_link" title="app/models/registration_course.rb">app/models/registration_course.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>8</td>
-        <td>5</td>
-        <td>5</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -332,11 +332,11 @@
       
       <tr>
         <td class="strong"><a href="#0c1631cb2c634ac50fe30ed71782a4e641257410" class="src_link" title="test/controllers/registration_courses_controller_test.rb">test/controllers/registration_courses_controller_test.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>66</td>
-        <td>34</td>
-        <td>34</td>
-        <td>0</td>
+        <td class="green strong">96.88 %</td>
+        <td>60</td>
+        <td>32</td>
+        <td>31</td>
+        <td>1</td>
         <td>1.2</td>
       </tr>
       
@@ -1533,8 +1533,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="27">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
           <code class="ruby">    @registration_course = RegistrationCourse.new(registration_course_params)</code>
         </li>
@@ -1545,14 +1545,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="29">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="30">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
           
           <code class="ruby">      if @registration_course.save</code>
         </li>
@@ -1575,14 +1575,14 @@
           <code class="ruby">      else</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="34">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="2" data-linenumber="34">
+          <span class="hits">2</span>
           
           <code class="ruby">        format.html { render :new }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="35">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
           
           <code class="ruby">        format.json { render json: @registration_course.errors, status: :unprocessable_entity }</code>
         </li>
@@ -1803,8 +1803,8 @@
           <code class="ruby">    def registration_course_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="72">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="72">
+          <span class="hits">3</span>
           
           <code class="ruby">      params.require(:registration_course).permit(:grade, :user_id, :course_offering_id)</code>
         </li>
@@ -2035,8 +2035,8 @@
     <h3>app/models/course_offering.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2068,10 +2068,10 @@
           <code class="ruby">  has_many :registration_courses, dependent: :destroy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  #validates_presence_of :year</code>
+          <code class="ruby">  validates_presence_of :year</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
@@ -2090,8 +2090,8 @@
     <h3>app/models/registration_course.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2117,10 +2117,10 @@
           <code class="ruby">  belongs_to :course_offering</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#  validates_presence_of :grade</code>
+          <code class="ruby">  validates_presence_of :grade</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -5561,11 +5561,11 @@
         <div class="source_table" id="0c1631cb2c634ac50fe30ed71782a4e641257410">
   <div class="header">
     <h3>test/controllers/registration_courses_controller_test.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="green">96.88 %</span> covered</h4>
     <div>
-      <b>34</b> relevant lines. 
-      <span class="green"><b>34</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>32</b> relevant lines. 
+      <span class="green"><b>31</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -5602,8 +5602,8 @@
           <code class="ruby">  setup do</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="6">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="8" data-linenumber="6">
+          <span class="hits">8</span>
           
           <code class="ruby">    @registration_course = registration_courses(:one)</code>
         </li>
@@ -5695,13 +5695,13 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_difference(&#39;RegistrationCourse.count&#39;,1) do</code>
+          <code class="ruby">    assert_difference(&#39;RegistrationCourse.count&#39;) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">      post registration_courses_url, params: { registration_course: { course_offering_id: 1, grade: &#39;A&#39;, user_id: 1 } }</code>
+          <code class="ruby">      post registration_courses_url, params: { registration_course: { course_offering_id: 3, grade: &#39;A+&#39;, user_id: 4 } }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
@@ -5716,10 +5716,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="missed" data-hits="0" data-linenumber="25">
           
           
-          <code class="ruby">    #assert_redirected_to registration_course_url(RegistrationCourse.last)</code>
+          <code class="ruby">    assert_redirected_to registration_course_url(RegistrationCourse.last)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
@@ -5734,94 +5734,94 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="28">
           
-          <code class="ruby">  test &quot;should not create registration_course if grade is not presence&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="29">
           
-          <code class="ruby">    assert_no_difference(&#39;RegistrationCourse.count&#39;) do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">      post registration_courses_url, params: { registration_course: { course_offering_id: 1, grade: &#39;&#39;, user_id: 1 } }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">    #assert_redirected_to registration_course_url(RegistrationCourse.last)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
-          
           <code class="ruby">  test &quot;should show registration_course&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">    get registration_course_url(@registration_course)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_response :success</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
           <code class="ruby">  test &quot;should get edit&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
           <code class="ruby">    get edit_registration_course_url(@registration_course)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_response :success</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  test &quot;should update registration_course&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    patch registration_course_url(@registration_course), params: { registration_course: { course_offering_id: 1, grade: &#39;new A&#39;, user_id: 1 } }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">    #assert_redirected_to registration_course_url(@registration_course)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="43">
@@ -5845,13 +5845,13 @@
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">  test &quot;should update registration_course&quot; do</code>
+          <code class="ruby">  test &quot;should not update registration_course if grade is not presence&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
-          <code class="ruby">    patch registration_course_url(@registration_course), params: { registration_course: { course_offering_id: 1, grade: &#39;new A&#39;, user_id: 1 } }</code>
+          <code class="ruby">    patch registration_course_url(@registration_course), params: { registration_course: { course_offering_id: 1, grade: &#39;&#39;, user_id: 1 } }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
@@ -5878,34 +5878,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="52">
           
-          <code class="ruby">  test &quot;should not update registration_course if grade is not presence&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">    patch registration_course_url(@registration_course), params: { registration_course: { course_offering_id: 1, grade: &#39;&#39;, user_id: 1 } }</code>
+          <code class="ruby">  test &quot;should destroy registration_course&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    #assert_redirected_to registration_course_url(@registration_course)</code>
+          <code class="ruby">    assert_difference(&#39;RegistrationCourse.count&#39;, -1) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_response :success</code>
+          <code class="ruby">      delete registration_course_url(@registration_course)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
@@ -5914,55 +5914,19 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="59">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  test &quot;should destroy registration_course&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_difference(&#39;RegistrationCourse.count&#39;, -1) do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      delete registration_course_url(@registration_course)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_redirected_to registration_courses_url</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">end</code>

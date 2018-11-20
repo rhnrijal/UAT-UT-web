@@ -18,20 +18,14 @@ class RegistrationCoursesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create registration_course" do
     sign_in users(:one)
-    assert_difference('RegistrationCourse.count',1) do
-      post registration_courses_url, params: { registration_course: { course_offering_id: 1, grade: 'A', user_id: 1 } }
+    assert_difference('RegistrationCourse.count') do
+      post registration_courses_url, params: { registration_course: { course_offering_id: 3, grade: 'A+', user_id: 4 } }
     end
 
-    #assert_redirected_to registration_course_url(RegistrationCourse.last)
+    assert_redirected_to registration_course_url(RegistrationCourse.last)
   end
 
-  test "should not create registration_course if grade is not presence" do
-    assert_no_difference('RegistrationCourse.count') do
-      post registration_courses_url, params: { registration_course: { course_offering_id: 1, grade: '', user_id: 1 } }
-    end
 
-    #assert_redirected_to registration_course_url(RegistrationCourse.last)
-  end
 
   test "should show registration_course" do
     get registration_course_url(@registration_course)

@@ -10,4 +10,4 @@ two:
   id: 2
   grade: "A"
   user_id: 2
-  course_offering_id:
+  course_offering_id: 2

@@ -8,8 +8,9 @@ one:
   id: 1
   email: "try@ait.asia"
   encrypted_password: "$2a$11$VwhYWUA14O1v5QS16qStsuPbhQWO1fHZuRmthIbEMnNysBWzl5kyi"
-
+  role_id: 2
 two:
   id: 2
   email: "try1@ait.asia"
   encrypted_password: "$2a$11$XVZDvY3j3g903ERoEy91i.RaxxHrLLaRlhDjTJvmshbitb.ykEJHC"
+  role_id: 2
